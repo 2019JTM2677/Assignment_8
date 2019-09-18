@@ -20,7 +20,7 @@ def orient_bit(par_data): #Function for bit stuffing
     for x in range(0,len(par_data)):
         trans_data.append(par_data[x])
         flag=flag+1
-        if flag > 3:
+        if flag >=3:  #
             if par_data[x]=='0' and par_data[x-1]=='1' and par_data[x-2]=='0':
                 trans_data.append('0')
                 flag=0            
